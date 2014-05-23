@@ -1,0 +1,5 @@
+---
+- name: ensure apt can deal with https
+  apt: name=apt-transport-https state=present
+- name: update the system
+  apt: update_cache=yes upgrade=yes
